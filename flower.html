@@ -53,15 +53,14 @@
 	</div>
 
   <a-scene embedded arjs="debugUIEnabled: false;">           
-	<!-- saelha01 @ https://github.com/jeromeetienne/AR.js/issues/408#issuecomment-425260690 -->
+	<!-- a-image attributes by saelha01 @ https://github.com/jeromeetienne/AR.js/issues/408#issuecomment-425260690 -->
 	<!-- IMAGE: CC Attribution-Share Alike 4.0 International by https://commons.wikimedia.org/wiki/User:Peripitus -->
-	<a-image id="test" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Nelumno_nucifera_open_flower_-_botanic_garden_adelaide2.jpg" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
-
-	<!-- In progress one using our asset that doesn't work for some reason -->
-	<!-- <a-image id="test" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="flower.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image> -->
-
-    <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+	<!-- Use this syntax from armonnaeini @ https://github.com/jeromeetienne/AR.js/issues/159#issuecomment-442177240 to make sure entities dissapear when 
+		marker is offscreen-->
+	<a-marker preset='hiro'>
+			<a-image id="test" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Nelumno_nucifera_open_flower_-_botanic_garden_adelaide2.jpg" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+	</a-marker>
+	<a-entity camera></a-entity>
   </a-scene>
 
 </body>
