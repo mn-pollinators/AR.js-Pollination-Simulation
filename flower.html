@@ -6,33 +6,19 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden; width: 100%'>
 
+	<div>
+		<img src="apis.png" class="bee">
+	</div>
 
-
-	
-	<!-- <div class='centered'> -->
-		<!-- <a href='?artoolkit'>artoolkit</a> -->
-		<!-- /  -->
-		<!-- <a href='?aruco'>aruco</a> -->
-		<!-- /  -->
-		<!-- <a href='?area-artoolkit'>area artoolkit</a> -->
-		<!-- /  -->
-		<!-- <a href='?area-aruco'>area aruco</a> -->
-		<!-- /  -->
-		<!-- <a href='?tango'>tango</a> -->
-		<!-- /  -->
-		<!-- <a href='?best'>best</a> -->
-	<!-- </div> -->
-	
 	<div class="question-mark">
 		<p>?</p>
 	</div>
 
   <a-scene embedded arjs="debugUIEnabled: false;">           
-    <!-- create your content here. just a box for now -->
-    
-    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-    <!-- <a-text value="Hello, World!"></a-text> -->
-    
+	<!-- saelha01 @ https://github.com/jeromeetienne/AR.js/issues/408#issuecomment-425260690 -->
+	<!-- IMAGE: CC Attribution-Share Alike 4.0 International by https://commons.wikimedia.org/wiki/User:Peripitus -->
+	<a-image id="test" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Nelumno_nucifera_open_flower_-_botanic_garden_adelaide2.jpg" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>

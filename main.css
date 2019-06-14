@@ -32,5 +32,17 @@
 	z-index: 1;
 }
 
+.bee {
+	z-index: 1;
+
+	position: fixed;
+	bottom: -15%;
+	right: 20%;
+	left: 10%;
+
+	max-height: 40rem;
+	max-width: 40rem;
+}
+
 
 
