@@ -1,3 +1,4 @@
-#Pollinator AR.js Demo
+# Pollinator AR.js Demo
+
 Demo using AR.js for the next meeting. Paul Friederichsen and I are were tasked with demoing a prototype for a learning game about teaching children about pollinators in the prairie. 
 
