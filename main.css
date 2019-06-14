@@ -1,0 +1,36 @@
+.centered {
+	color: red;
+	/* font-size: 1rem; */
+	/* width:100%;  */
+	/* text-align: center;  */
+	/* z-index: 1; */
+	
+	background: white;
+	
+	position: fixed;
+    bottom: 0%;
+    left: 0%;
+}  
+
+.question-mark {
+	position: fixed;
+	right: 5%;
+	top: 5%;
+	font-size: 5rem;
+	
+	width: 6rem;
+    height: 6rem;
+	
+	background: #43DE0C;
+	border: 2px solid #000000;
+	/* box-sizing: border-box; */
+	border-radius: 50%;
+	line-height: 5rem;
+	
+	text-align: center;
+	
+	z-index: 1;
+}
+
+
+
