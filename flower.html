@@ -11,6 +11,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/marker-events.html#L7 -->
+	<script>
+        AFRAME.registerComponent('registerevents', {
+            init: function () {
+                var marker = this.el;
+                marker.addEventListener('markerFound', function() {
+                    var markerId = marker.id;
+                    console.log('markerFound', markerId);
+                    // TODO: Add your own code here to react to the marker being found.
+                });
+                marker.addEventListener('markerLost', function() {
+                    var markerId = marker.id;
+                    console.log('markerLost', markerId);
+                    // TODO: Add your own code here to react to the marker being lost.
+                });
+            }
+        });
+	</script>
+
 </head>
 
 <body style='margin : 0px; overflow: hidden; width: 100%'>
@@ -53,13 +73,13 @@
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-	<a-marker type='barcode' value='2'>
-		<a-image id="test" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="flower.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+	<a-marker id='testclick' type='barcode' value='2' registerevents>
+		<a-image id="test2" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="flower.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
 	</a-marker>
 
-	<a-marker type='barcode' value='3'>
-		<a-image id="test" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="apis.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
-	</a-marker>
+	<!--<a-marker type='barcode' value='3'>-->
+		<!--<a-image id="test3" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="apis.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>-->
+	<!--</a-marker>-->
 
 	<!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
 	<a-entity camera></a-entity>
