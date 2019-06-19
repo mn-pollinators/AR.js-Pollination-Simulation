@@ -34,10 +34,10 @@
 
 </head>
 
-<body style='margin : 0px; overflow: hidden; width: 100%'>
+<body>
 
 <div>
-	<div class="timer">
+	<div class="timer gui">
 		<p>5:00</p>
 	</div>
 
@@ -47,13 +47,17 @@
 </div>
 
 <div>
-	<div class="nextRound">
+	<div class="round nextRound gui">
 		<input id="next-round-button" type="button" value="Next round" nextRoundIMG="assets/apis.png"/>
 	</div>
 
-	<div class="nextRoundNext">
+	<div class="round prevRound gui">
 		<input id="next-round-button-next" type="button" value="Previous round" nextRoundIMG="assets/flower.png"/>
 	</div>
+</div>
+
+<div class="detect-status">
+	Detection Status: WIP
 </div>
 
 
@@ -79,7 +83,7 @@
 </div>
 
 <div>
-	<img src="assets/apis.png" class="bee">
+	<img src="assets/apis.png" class="bee gui">
 </div>
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
