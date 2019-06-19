@@ -1,3 +1,20 @@
+/*GUI START*/
+.gui {
+    z-index: 1;
+    position: absolute;
+}
+
+#detect-status {
+    left: 25%;
+    right: 25%;
+    top: 95%;
+    text-align: center;
+    background-color: white;
+
+    z-index: 20;
+    position: absolute;
+}
+
 .centered {
 	color: red;
 	background: white;
@@ -5,27 +22,6 @@
 	position: fixed;
 	bottom: 0;
 	left: 0;
-}
-
-#question-mark {
-	z-index: 1;
-	position: fixed;
-
-	right: 5%;
-	top: 5%;
-	font-size: 5rem;
-
-	width: 6rem;
-	height: 6rem;
-
-	background: #43DE0C;
-	border: 2px solid #000000;
-	border-radius: 50%;
-	line-height: 5rem;
-
-	text-align: center;
-
-	color: #000;
 }
 
 .bee {
@@ -46,18 +42,9 @@
 	margin-right: auto;
 }
 
-.timer {
-	width: 4rem;
-	height: 2rem;
-	left: 5%;
-	top: 5%;
+/*GUI END*/
 
-	background: #43DE0C;
-
-	text-align: center;
-
-	border-radius: 40%;
-}
+/*BUTTONS START*/
 
 .round {
 	width: 6rem;
@@ -95,21 +82,7 @@
 	top: 25%;
 }
 
-#detect-status {
-	left: 25%;
-	right: 25%;
-	top: 95%;
-	text-align: center;
-	background-color: white;
-
-	z-index: 20;
-	position: absolute;
-}
-
-.gui {
-	z-index: 1;
-	position: absolute;
-}
+/*BUTTONS END*/
 
 body {
 	margin : 0;
@@ -126,3 +99,41 @@ body {
 		max-width: 30rem;
 	}
 }
+
+
+/*Hidden/removed components that may come back, probably not though...*/
+
+
+/*#question-mark {*/
+/*z-index: 1;*/
+/*position: fixed;*/
+
+/*right: 5%;*/
+/*top: 5%;*/
+/*font-size: 5rem;*/
+
+/*width: 6rem;*/
+/*height: 6rem;*/
+
+/*background: #43DE0C;*/
+/*border: 2px solid #000000;*/
+/*border-radius: 50%;*/
+/*line-height: 5rem;*/
+
+/*text-align: center;*/
+
+/*color: #000;*/
+/*}*/
+
+/*.timer {*/
+/*width: 4rem;*/
+/*height: 2rem;*/
+/*left: 5%;*/
+/*top: 5%;*/
+
+/*background: #43DE0C;*/
+
+/*text-align: center;*/
+
+/*border-radius: 40%;*/
+/*}*/
