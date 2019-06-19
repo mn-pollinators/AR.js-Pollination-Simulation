@@ -4,6 +4,27 @@
     position: absolute;
 }
 
+#question-mark {
+    z-index: 1;
+    position: fixed;
+
+    right: 5%;
+    top: 5%;
+    font-size: 5rem;
+
+    width: 6rem;
+    height: 6rem;
+
+    background: #43DE0C;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    line-height: 5rem;
+
+    text-align: center;
+
+    color: #000;
+}
+
 #detect-status {
     left: 25%;
     right: 25%;
@@ -102,28 +123,6 @@ body {
 
 
 /*Hidden/removed components that may come back, probably not though...*/
-
-
-/*#question-mark {*/
-/*z-index: 1;*/
-/*position: fixed;*/
-
-/*right: 5%;*/
-/*top: 5%;*/
-/*font-size: 5rem;*/
-
-/*width: 6rem;*/
-/*height: 6rem;*/
-
-/*background: #43DE0C;*/
-/*border: 2px solid #000000;*/
-/*border-radius: 50%;*/
-/*line-height: 5rem;*/
-
-/*text-align: center;*/
-
-/*color: #000;*/
-/*}*/
 
 /*.timer {*/
 /*width: 4rem;*/
