@@ -1,18 +1,13 @@
 .centered {
 	color: red;
-	/* font-size: 1rem; */
-	/* width:100%;  */
-	/* text-align: center;  */
-	/* z-index: 1; */
-	
 	background: white;
-	
+
 	position: fixed;
-    bottom: 0%;
-    left: 0%;
+    bottom: 0;
+    left: 0;
 }  
 
-.question-mark {
+#question-mark {
 	position: fixed;
 	right: 5%;
 	top: 5%;
@@ -30,6 +25,8 @@
 	text-align: center;
 	
 	z-index: 1;
+
+	color: #000;
 }
 
 .bee {
@@ -53,18 +50,14 @@
     margin-right: auto;
 }
 
-h4.modal-title {
-	/* margin: 0 auto; */
-}
-
 .timer {
+	z-index: 1;
+
 	position: absolute;
 	width: 4rem;
 	height: 2rem;
 	left: 5%;
 	top: 5%;
-
-	z-index: 1;
 
 	background: #43DE0C;
 
@@ -74,25 +67,25 @@ h4.modal-title {
 }
 
 .nextRound {
+	z-index: 1;
+
 	position: absolute;
 	width: 6rem;
 	height: 2rem;
 	left: 15%;
 	top: 5%;
 
-	z-index: 1;
-
 	text-align: center;
 }
 
 .nextRoundNext {
+	z-index: 1;
+
 	position: absolute;
 	width: 6rem;
 	height: 2rem;
 	left: 30%;
 	top: 5%;
-
-	z-index: 1;
 
 	text-align: center;
 }
