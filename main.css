@@ -66,12 +66,31 @@
 	/*top: 5%;*/
 }
 
+.scale {
+	z-index: 2;
+
+	width: 6rem;
+	height: 2rem;
+	text-align: center;
+	/*top: 5%;*/
+}
+
 .nextRound {
+	left: 0;
+	top: 5%;
+}
+
+.prevRound {
+	left: 0;
+	top: 10%;
+}
+
+.bigger-scale {
 	left: 0;
 	top: 20%;
 }
 
-.prevRound {
+.smaller-scale {
 	left: 0;
 	top: 25%;
 }
