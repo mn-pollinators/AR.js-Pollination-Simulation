@@ -15,20 +15,11 @@
 	<!-- https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/marker-events.html#L7 -->
 	<script src="scripts/marker_detect.js"></script>
 	<script src="scripts/change_round.js"></script>
+	<script src="scripts/img_scale.js"></script>
 
 </head>
 
 <body>
-
-<div>
-	<div class="timer gui">
-		<p>5:00</p>
-	</div>
-
-	<button id="question-mark" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-		?
-	</button>
-</div>
 
 <div>
 	<div class="round nextRound gui">
@@ -39,6 +30,17 @@
 		<input id="next-round-button-next" type="button" value="Previous round" nextRoundIMG="assets/flower.png"/>
 	</div>
 </div>
+
+<div>
+	<div class="scale bigger-scale gui">
+		<input id="scale-bigger" type="button" value="Scale + 10%"/>
+	</div>
+
+	<div class="scale smaller-scale gui">
+		<input id="scale-smaller" type="button" value="Scale - 10%"/>
+	</div>
+</div>
+
 
 <div id="detect-status">
 	Detection Status: WIP
@@ -72,7 +74,7 @@
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-	<a-marker markerhandler id='round-change-marker' type='barcode' value='2' registerevents>
+	<a-marker round_handler size_handler id='round-change-marker' type='barcode' value='2' registerevents>
 		<a-image id="round-change-a-image" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="assets/flower.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
 	</a-marker>
 
