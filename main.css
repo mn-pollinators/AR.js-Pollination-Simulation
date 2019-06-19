@@ -73,6 +73,30 @@ h4.modal-title {
 	border-radius: 40%;
 }
 
+.nextRound {
+	position: absolute;
+	width: 6rem;
+	height: 2rem;
+	left: 15%;
+	top: 5%;
+
+	z-index: 1;
+
+	text-align: center;
+}
+
+.nextRoundNext {
+	position: absolute;
+	width: 6rem;
+	height: 2rem;
+	left: 30%;
+	top: 5%;
+
+	z-index: 1;
+
+	text-align: center;
+}
+
 @media only screen and (max-width: 440px) {
 	.bee {
 		right: 60%;
