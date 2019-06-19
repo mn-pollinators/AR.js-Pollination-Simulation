@@ -1,41 +1,34 @@
 .centered {
 	color: red;
-	/* font-size: 1rem; */
-	/* width:100%;  */
-	/* text-align: center;  */
-	/* z-index: 1; */
-	
 	background: white;
-	
-	position: fixed;
-    bottom: 0%;
-    left: 0%;
-}  
 
-.question-mark {
 	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#question-mark {
+	z-index: 1;
+	position: fixed;
+
 	right: 5%;
 	top: 5%;
 	font-size: 5rem;
-	
+
 	width: 6rem;
-    height: 6rem;
-	
+	height: 6rem;
+
 	background: #43DE0C;
 	border: 2px solid #000000;
-	/* box-sizing: border-box; */
 	border-radius: 50%;
 	line-height: 5rem;
-	
+
 	text-align: center;
-	
-	z-index: 1;
+
+	color: #000;
 }
 
 .bee {
-	z-index: 1;
-
-	position: fixed;
 	bottom: -15%;
 	right: 20%;
 	left: 10%;
@@ -48,29 +41,61 @@
 	max-height: 20rem;
 	max-width: 20rem;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h4.modal-title {
-	/* margin: 0 auto; */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .timer {
-	position: absolute;
 	width: 4rem;
 	height: 2rem;
 	left: 5%;
 	top: 5%;
-
-	z-index: 1;
 
 	background: #43DE0C;
 
 	text-align: center;
 
 	border-radius: 40%;
+}
+
+.round {
+	width: 6rem;
+	height: 2rem;
+	text-align: center;
+	/*top: 5%;*/
+}
+
+.nextRound {
+	left: 0;
+	top: 20%;
+}
+
+.prevRound {
+	left: 0;
+	top: 25%;
+}
+
+.detect-status {
+	left: 25%;
+	right: 25%;
+	top: 95%;
+	text-align: center;
+	background-color: white;
+
+	z-index: 20;
+	position: absolute;
+}
+
+.gui {
+	z-index: 1;
+	position: absolute;
+}
+
+body {
+	margin : 0;
+	overflow: hidden;
+	width: 100%
 }
 
 @media only screen and (max-width: 440px) {
@@ -81,4 +106,4 @@ h4.modal-title {
 		max-height: 30rem;
 		max-width: 30rem;
 	}
-  }
+}

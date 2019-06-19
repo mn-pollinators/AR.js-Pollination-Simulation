@@ -30,36 +30,51 @@
             }
         });
 	</script>
+	<script src="changeRound.js"></script>
 
 </head>
 
-<body style='margin : 0px; overflow: hidden; width: 100%'>
+<body>
 
-<div class="timer">
-	<p>5:00</p>
+<div>
+	<div class="timer gui">
+		<p>5:00</p>
+	</div>
+
+	<button id="question-mark" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+		?
+	</button>
 </div>
 
-<button class="question-mark" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-	?
-</button>
+<div>
+	<div class="round nextRound gui">
+		<input id="next-round-button" type="button" value="Next round" nextRoundIMG="assets/apis.png"/>
+	</div>
+
+	<div class="round prevRound gui">
+		<input id="next-round-button-next" type="button" value="Previous round" nextRoundIMG="assets/flower.png"/>
+	</div>
+</div>
+
+<div class="detect-status">
+	Detection Status: WIP
+</div>
+
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<!-- Modal Header -->
 			<div class="modal-header">
 				<h4 class="modal-title">Your Bee: </br> Apis Mellifera</h4>
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 			</div>
 
-			<!-- Modal body -->
 			<div class="modal-body">
 				<p>It's hip to program bees.</p>
-				<img src="apis.png" class="modal-body-img">
+				<img src="assets/apis.png" class="modal-body-img">
 			</div>
 
-			<!-- Modal footer -->
 			<div class="modal-footer">
 				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 			</div>
@@ -68,17 +83,13 @@
 </div>
 
 <div>
-	<img src="apis.png" class="bee">
+	<img src="assets/apis.png" class="bee gui">
 </div>
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-	<a-marker id='testclick' type='barcode' value='2' registerevents>
-		<a-image id="test2" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="flower.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
-	</a-marker>
-
-	<a-marker type='barcode' value='3'>
-		<a-image id="test3" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="apis.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+	<a-marker markerhandler id='round-change-marker' type='barcode' value='2' registerevents>
+		<a-image id="round-change-a-image" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" src="assets/flower.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
 	</a-marker>
 
 	<!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
