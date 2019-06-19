@@ -1,18 +1,22 @@
 AFRAME.registerComponent('round_handler', {
 
     init: function() {
-        const button = document.querySelector("#next-round-button");
-        const button1 = document.querySelector("#next-round-button-next");
+        var round = 0;
 
+        const button = document.querySelector("#next-round-button");
 
         button.addEventListener('click', function(){
-            const src = button.getAttribute('nextRoundIMG');
-            document.querySelector("#round-change-a-image").setAttribute('src', src)
-        });
 
-
-        button1.addEventListener('click', function(){
-            const src = button1.getAttribute('nextRoundIMG');
-            document.querySelector("#round-change-a-image").setAttribute('src', src)
+            if (round%3 === 0) {
+                const src = button.getAttribute('nextRoundIMG0');
+                document.querySelector("#round-change-a-image").setAttribute('src', src);
+            } else if (round%3 === 1) {
+                const src = button.getAttribute('nextRoundIMG1');
+                document.querySelector("#round-change-a-image").setAttribute('src', src);
+            } else {
+                const src = button.getAttribute('nextRoundIMG2');
+                document.querySelector("#round-change-a-image").setAttribute('src', src);
+            }
+            round += 1;
         });
     }});
