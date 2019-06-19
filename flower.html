@@ -13,23 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 	<!-- https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/marker-events.html#L7 -->
-	<script>
-        AFRAME.registerComponent('registerevents', {
-            init: function () {
-                var marker = this.el;
-                marker.addEventListener('markerFound', function() {
-                    var markerId = marker.id;
-                    console.log('markerFound', markerId);
-                    // TODO: Add your own code here to react to the marker being found.
-                });
-                marker.addEventListener('markerLost', function() {
-                    var markerId = marker.id;
-                    console.log('markerLost', markerId);
-                    // TODO: Add your own code here to react to the marker being lost.
-                });
-            }
-        });
-	</script>
+	<script src="markerDetect.js"></script>
 	<script src="changeRound.js"></script>
 
 </head>
@@ -56,7 +40,7 @@
 	</div>
 </div>
 
-<div class="detect-status">
+<div id="detect-status">
 	Detection Status: WIP
 </div>
 
