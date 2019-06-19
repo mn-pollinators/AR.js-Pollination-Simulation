@@ -1,4 +1,4 @@
-AFRAME.registerComponent('markerhandler', {
+AFRAME.registerComponent('round_handler', {
 
     init: function() {
         const button = document.querySelector("#next-round-button");
