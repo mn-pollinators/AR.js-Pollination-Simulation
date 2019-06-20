@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="098302c1-352c-464e-bf58-f6c5604c7d9d" name="Default" comment="Add marker 3, modify scripts to encompass it&#10;&#10;Both markers start at different images and cycle through different ones.&#10;Both are grown or shrunk at the same time." />
+    <list default="true" id="098302c1-352c-464e-bf58-f6c5604c7d9d" name="Default" comment="Add marker 3, modify scripts to encompass it&#10;&#10;Both markers start at different images and cycle through different ones.&#10;Both are grown or shrunk at the same time.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/PollinatorARJSDemo.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +18,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,6 +80,7 @@
         <option value="$PROJECT_DIR$/scripts/change_round.js" />
         <option value="$PROJECT_DIR$/scripts/img_scale.js" />
         <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -255,7 +275,7 @@
       <workItem from="1561045342502" duration="512000" />
       <workItem from="1561046257220" duration="1404000" />
       <workItem from="1561047692924" duration="1896000" />
-      <workItem from="1561061208522" duration="234000" />
+      <workItem from="1561061208522" duration="1128000" />
     </task>
     <task id="LOCAL-00001" summary="Upgrade AR.js/Aframe, barcode showing our flower">
       <created>1560794138599</created>
@@ -415,7 +435,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33721000" />
+    <option name="totallyTimeSpent" value="34615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,6 +736,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
