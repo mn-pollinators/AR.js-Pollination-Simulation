@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="098302c1-352c-464e-bf58-f6c5604c7d9d" name="Default" comment="Add marker 3, modify scripts to encompass it&#10;&#10;Both markers start at different images and cycle through different ones.&#10;Both are grown or shrunk at the same time.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="098302c1-352c-464e-bf58-f6c5604c7d9d" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/PollinatorARJSDemo.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
@@ -22,8 +21,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -275,7 +274,7 @@
       <workItem from="1561045342502" duration="512000" />
       <workItem from="1561046257220" duration="1404000" />
       <workItem from="1561047692924" duration="1896000" />
-      <workItem from="1561061208522" duration="1128000" />
+      <workItem from="1561061208522" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary="Upgrade AR.js/Aframe, barcode showing our flower">
       <created>1560794138599</created>
@@ -431,11 +430,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561046842858</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add gitignore, delete .idea folder&#10;&#10;Oops">
+      <created>1561062366861</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1561062366861</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34615000" />
+    <option name="totallyTimeSpent" value="34705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +514,8 @@
     <MESSAGE value="Bring back accidentally removed &quot;?&quot; GUI element&#10;&#10;Accidentally removed in the rush to get rid of the timer and add in&#10;scale size of img buttons." />
     <MESSAGE value="Condense round button into one round cycler, add sunflower asset&#10;&#10;There is only a &quot;Next Round&quot; button now, and it cycles through the &#10;flower, sunflower, and bee." />
     <MESSAGE value="Add marker 3, modify scripts to encompass it&#10;&#10;Both markers start at different images and cycle through different ones.&#10;Both are grown or shrunk at the same time." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add marker 3, modify scripts to encompass it&#10;&#10;Both markers start at different images and cycle through different ones.&#10;Both are grown or shrunk at the same time." />
+    <MESSAGE value="Add gitignore, delete .idea folder&#10;&#10;Oops" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore, delete .idea folder&#10;&#10;Oops" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -741,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
