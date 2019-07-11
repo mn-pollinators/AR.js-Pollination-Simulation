@@ -11,13 +11,13 @@ AFRAME.registerComponent('registerevents', {
         var marker = this.el;
         marker.addEventListener('markerFound', function() {
             var markerId = marker.id;
-            console.log('markerFound', markerId);
+            //console.log('markerFound', markerId);
 
             detectStatusDiv.innerHTML = "Marker: Found";
         });
         marker.addEventListener('markerLost', function() {
             var markerId = marker.id;
-            console.log('markerLost', markerId);
+            //console.log('markerLost', markerId);
 
             detectStatusDiv.innerHTML = "Marker: Lost";
         });
