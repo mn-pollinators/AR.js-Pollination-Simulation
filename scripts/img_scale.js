@@ -4,7 +4,7 @@
 AFRAME.registerComponent('size_handler', {
 
     init: function() {
-        console.log("img_scale hit");
+        //console.log("img_scale hit");
         // const marker = document.querySelector("#round-change-marker");
         const aImg = document.querySelector("#round-change-a-image");
         const aImg_alt = document.querySelector("#round-change-a-image-alt");
@@ -17,7 +17,7 @@ AFRAME.registerComponent('size_handler', {
             Object.keys(scale).forEach((key) => scale[key] = scale[key] * 1.1);
             aImg.setAttribute('scale', scale);
             aImg_alt.setAttribute('scale', scale);
-            console.log("img bigger");
+            //console.log("img bigger");
         });
 
         buttonImgSmaller.addEventListener('click', function() {
@@ -26,7 +26,7 @@ AFRAME.registerComponent('size_handler', {
             Object.keys(scale).forEach((key) => scale[key] = scale[key] * 0.9);
             aImg.setAttribute('scale', scale);
             aImg_alt.setAttribute('scale', scale);
-            console.log("img smaller");
+            //console.log("img smaller");
         });
 
     }});
